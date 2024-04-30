@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="mynumber">Number1 </label>
+    <input type="text" id="mynumber">
+    <button id="bntMyButton" onclick="ClickTheButton()">Click me</button>
+
+    <label for="myothernumber">Number2 </label>
+    <input type="text" id="myothernumber">
+    <button id="bntMyButton" onclick="ClickTheButton()">Click me</button>
+
+    <p id="result">The result</p>
+
+    <script>
+        function ClickTheButton()
+        {
+            //this stores date as a string of text
+            let myNumber1 = Number(document.getElementById('mynumber').value);
+            
+            //The text of the input will be stored in the variable myTekst and then displayed in the alert
+            let myNumber2 = Number(document.getElementById('mynumber').value);
+
+            //Algoritme calculation
+            let result = myNumber1 + myNumber2;
+
+            //Display it in elemend
+            document.getElementById('result').innerHTML = result;
+
+        }
+    </script>
+</body>
+
+</html>

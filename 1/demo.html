@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="DisplayMessage1()">Çlick me </button>
+    <div id="messageDiv1">My name is</div> 
+
+    <button onclick="DisplayMessage2()">Çlick me </button>
+    <div id="messageDiv2">My favorite food is</div> 
+
+    <script> 
+    function DisplayMessage1() {
+    const messageDiv1 = document.getElementById("messageDiv1"); 
+      messageDiv1.innerHTML = "Lupe!"; 
+    }
+    function DisplayMessage2() {
+    const messageDiv2 = document.getElementById("messageDiv2"); 
+      messageDiv2.innerHTML = "Pizza!"; 
+    }
+    </script>
+
+</body>
+</html>
