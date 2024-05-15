@@ -9,5 +9,5 @@ greetBtn.onclick = onGreetUserBtnClicked ;
 
 function onGreetUserBtnClicked() { 
 const nameField = document.getElementById ("nameField");
-    alert ("Hello userNameHere"); 
+    alert ("Hello " + nameField.value); 
 } 

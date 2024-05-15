@@ -1,9 +1,4 @@
-function AddToCart() {
-    items = items + 1;
-    // let item += 1;
-    document.getElementById("itemInCart").innerHTML = items;
-  }
-  <!DOCTYPE html>
+ <!DOCTYPE html>
   <html lang="en">
   
   <head>
@@ -21,6 +16,13 @@ function AddToCart() {
       </p>
       <script src="scripts/greetings.js">
   
+      </script>
+      <script>
+        let items = 0; // Initialize items variable
+        function AddToCart() {
+            items++; // Increment items by 1
+            document.getElementById("itemInCart").innerHTML = items;
+        }
       </script>
   </body>
   

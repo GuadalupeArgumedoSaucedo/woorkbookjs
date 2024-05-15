@@ -10,10 +10,10 @@
 <body>
     <label for="mynumber">Number1 </label>
     <input type="text" id="mynumber">
-    <button id="bntMyButton" onclick="ClickTheButton()">Click me</button>
 
     <label for="myothernumber">Number2 </label>
     <input type="text" id="myothernumber">
+
     <button id="bntMyButton" onclick="ClickTheButton()">Click me</button>
 
     <p id="result">The result</p>
@@ -25,7 +25,7 @@
             let myNumber1 = Number(document.getElementById('mynumber').value);
             
             //The text of the input will be stored in the variable myTekst and then displayed in the alert
-            let myNumber2 = Number(document.getElementById('mynumber').value);
+            let myNumber2 = Number(document.getElementById('myothernumber').value);
 
             //Algoritme calculation
             let result = myNumber1 + myNumber2;
